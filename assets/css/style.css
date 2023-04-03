@@ -3,3 +3,60 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  /* height: 100vh; */
+}
+
+main {
+  height: 100%;
+  color: #77716b;
+  background-color: #F5F5F1;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  padding: 20px;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+.text {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  height: calc(100% - 168px);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.col {
+  width: calc(100% / 3);
+  height: calc(100% / 2);
+  padding: 30px 10px;
+}
+
+.card {
+  height: 100%;
+  text-align: center;
+  background-color: white;
+}
+

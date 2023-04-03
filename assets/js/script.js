@@ -31,9 +31,9 @@ const team = [
   } 
 ]
 
-const body = document.querySelector('body');
-const output = document.createElement('ul');
-body.appendChild(output);
+const row = document.getElementsByClassName('row')[0];
+// const output = document.createElement('ul');
+// container.appendChild(output);
 
 // stampo in console
 /*********************************
@@ -56,10 +56,14 @@ for (let member of team) {
 
 // stampo stringhe e img
 for (let member of team) {
-  output.innerHTML += `
-    <li> ${'nome'}: ${member.nome}</li> 
-    <li> ${'ruolo'}: ${member.ruolo}</li> 
-    <li> <img src="${member.foto}"> </li> 
+  row.innerHTML += `
+    <div class="col">
+      <div class="card">
+        <img src="${member.foto}"> 
+        <h3> ${member.nome}</h3> 
+        <p> ${member.ruolo}</p> 
+      </div>  
+    </div>  
     `
 }
 
