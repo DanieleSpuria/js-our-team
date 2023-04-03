@@ -31,6 +31,10 @@ const team = [
   } 
 ]
 
+const body = document.querySelector('body');
+const output = document.createElement('ul');
+body.appendChild(output);
+
 // stampo in console
 /*********************************
 for (let member of team) {
@@ -39,13 +43,22 @@ for (let member of team) {
 }
 *********************************/
 
-const body = document.querySelector('body');
-const output = document.createElement('ul');
-body.appendChild(output);
-
+// stampo stringhe 
+/************************************ 
 for (let member of team) {
-  for (let key in member)
+  for (let key in member) {
     output.innerHTML += `
     <li> ${key}: ${member[key]}</li> 
     `
+  }
 }
+************************************/
+
+for (let member of team) {
+  output.innerHTML += `
+    <li> ${'nome'}: ${member.nome}</li> 
+    <li> ${'ruolo'}: ${member.ruolo}</li> 
+    <li> <img src="${member.foto}"> </li> 
+    `
+}
+
