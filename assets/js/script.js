@@ -30,3 +30,8 @@ const team = [
     foto: 'assets/img/barbara-ramos-graphic-designer.jpg',
   } 
 ]
+
+for (let member of team) {
+  for (let key in member)
+  console.log(key, member[key]);
+}
