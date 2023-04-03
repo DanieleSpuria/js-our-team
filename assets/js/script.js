@@ -31,7 +31,21 @@ const team = [
   } 
 ]
 
+// stampo in console
+/*********************************
 for (let member of team) {
   for (let key in member)
-  console.log(key, member[key]);
+    console.log(key, member[key]);
+}
+*********************************/
+
+const body = document.querySelector('body');
+const output = document.createElement('ul');
+body.appendChild(output);
+
+for (let member of team) {
+  for (let key in member)
+    output.innerHTML += `
+    <li> ${key}: ${member[key]}</li> 
+    `
 }
