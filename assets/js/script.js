@@ -54,6 +54,7 @@ for (let member of team) {
 }
 ************************************/
 
+// stampo stringhe e img
 for (let member of team) {
   output.innerHTML += `
     <li> ${'nome'}: ${member.nome}</li> 
